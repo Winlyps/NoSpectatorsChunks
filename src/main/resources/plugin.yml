@@ -1,0 +1,5 @@
+name: NoSpectatorsChunks
+version: '1.0.0'
+main: winlyps.noSpectatorsChunks.NoSpectatorsChunks
+api-version: '1.20'
+authors: [ Winlyps ]

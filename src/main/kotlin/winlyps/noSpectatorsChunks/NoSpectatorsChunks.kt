@@ -14,6 +14,9 @@ class NoSpectatorsChunks : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoSpectatorsChunks plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("spectatorsGenerateChunks", "true")
+            logger.info("NoSpectatorsChunks plugin has been disabled.")
+        }
     }
 }
